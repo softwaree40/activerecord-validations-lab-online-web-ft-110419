@@ -10,6 +10,8 @@ class Post < ActiveRecord::Base
          errors.add(:title, "Oh there is nothing in title")
        else
           #"Won't Believe", "Secret", "Top [number]", or "Guess"
+          title.map {|t|t != "Won't Believe" && t != "Secret" t!="Top [number]" t!="Guess"}
+          errors.add(:title, "Oh there is nothing in title")
        end
    end
 end
