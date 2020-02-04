@@ -11,7 +11,7 @@ class Post < ActiveRecord::Base
          elsif !title.match(/Won\'t Believe|Secret|Top [0-9]|Guess/)
            errors.add(:title, "This is not clickbait")
           
-         end
+         
        end
    end
 end
