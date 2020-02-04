@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
    validates :summary, length: { maximum: 250 }
    validates :category, inclusion: { in: %w(Fiction Non-Fiction) }
    def clickbait
-       if title == nil?
+       if title == nil
          errors.add(:title, "Oh there is nothing in title")
        else
           binding.pry
