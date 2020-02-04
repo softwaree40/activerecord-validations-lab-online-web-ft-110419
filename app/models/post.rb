@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
    def clickbait
         if title == nil 
           errors.add(:title, "This is not clickbait")
-        else
+        
          elsif !title.match(/Won\'t Believe|Secret|Top [0-9]|Guess/)
            errors.add(:title, "This is not clickbait")
           
