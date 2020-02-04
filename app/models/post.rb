@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
        if title == nil
          errors.add(:title, "Oh there is nothing in title")
        else
-          binding.pry
+          
        end
    end
 end
